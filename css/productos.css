@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.barraArriba {
+  background-color: orange;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+
+.menu button {
+  background-color: green;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s;
+}
+.menu button:hover {
+  background-color: #00cc44;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.filtros form {
+  display: flex;
+  gap: 10px;
+}
+.filtros input,
+.filtros select,
+.filtros button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  height: 60px;
+}
+
+.logo-mercado {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.card-body {
+  padding: 10px;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.producto-img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.btn-plus {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.btn-plus:hover {
+  background-color: green;
+}
+
+.producto-img {
+  width: 400px;   
+  height: 400px;  
+  object-fit: contain;
+}
+
+.card-footer {
+  padding: 10px;
+}
+.nombre {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.precio {
+  font-size: 20px;
+  color: green;
+  margin: 5px 0;
+}
