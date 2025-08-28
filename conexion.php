@@ -1,8 +1,8 @@
 <?php
-$serverName = "DESKTOP-56FEFQK";
-$database   = "Inventario";
-$uid        = "DFME";
-$pwd        = "1234";
+$serverName = "https://webmssql.monsterasp.net";
+$database   = "db26219";
+$uid        = "db26219";
+$pwd        = "SANTAFE2025!";
 
 $connectionInfo = array(
     "Database" => $database,
