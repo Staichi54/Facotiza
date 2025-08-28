@@ -1,5 +1,5 @@
 <?php
-$serverName = "webmssql.monsterasp.net";
+$serverName = "db26219.public.databaseasp.ne";
 $database   = "db26219";
 $uid        = "db26219";
 $pwd        = "SANTAFE2025!";
@@ -20,3 +20,4 @@ if ($conn === false) {
 }
 
 ?>
+
