@@ -1,6 +1,6 @@
 <div class="barraArriba">
   <div class="logo">
-    <a href="Index.php">facotiza</a>
+    <a href="index.php">facotiza</a>
   </div>
 
   <div class="menu">
@@ -10,3 +10,4 @@
     
   </div>
 </div>
+
