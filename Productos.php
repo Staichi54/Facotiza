@@ -1,15 +1,21 @@
 <?php
 session_start();
-$serverName = "db26219.public.databaseasp.ne";  
+$serverName = "db26219.public.databaseasp.net,1433";  // host + puerto
 $connectionInfo = array(
-    "Database" => "db2621",
-    "UID" => "db2621",       
-    "PWD" => "SANTAFE2025!",  
+    "Database" => "db26219",       // corregido
+    "UID" => "db26219",            // corregido
+    "PWD" => "SANTAFE2025!",       
+    "Encrypt" => true,             // requerido por hosting
+    "TrustServerCertificate" => true,
     "CharacterSet" => "UTF-8"
 );
+
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+
 if ($conn === false) {
     die("❌ Error de conexión:<br>" . print_r(sqlsrv_errors(), true));
+} else {
+    echo "✅ Conectado a SQL Server!";
 }
 
 // --------- Agregar producto a la lista (cuando se pulsa +) ---------
@@ -178,5 +184,6 @@ if ($stmt !== false) {
 
 </body>
 </html>
+
 
 
