@@ -15,7 +15,7 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 if ($conn === false) {
     die("❌ Error de conexión:<br>" . print_r(sqlsrv_errors(), true));
 } else {
-    echo "✅ Conectado a SQL Server!";
+    //echo "✅ Conectado a SQL Server!";
 }
 
 // --------- Agregar producto a la lista (cuando se pulsa +) ---------
@@ -184,6 +184,7 @@ if ($stmt !== false) {
 
 </body>
 </html>
+
 
 
 
