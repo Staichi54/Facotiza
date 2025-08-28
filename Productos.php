@@ -1,6 +1,6 @@
 <?php
 session_start();
-$serverName = "https://webmssql.monsterasp.net";  
+$serverName = "webmssql.monsterasp.net";  
 $connectionInfo = array(
     "Database" => "db2621",
     "UID" => "db2621",       
@@ -178,3 +178,4 @@ if ($stmt !== false) {
 
 </body>
 </html>
+
