@@ -1,11 +1,21 @@
-# Usar PHP con Apache como imagen base
 FROM php:8.2-apache
 
-# Copiar tu proyecto al directorio de Apache
+# Instalar dependencias necesarias
+RUN apt-get update && apt-get install -y \
+    unixodbc-dev \
+    gnupg2 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instalar extensiones de Microsoft SQL Server
+RUN pecl install sqlsrv pdo_sqlsrv \
+    && docker-php-ext-enable sqlsrv pdo_sqlsrv
+
+# Copiar tu proyecto al contenedor
 COPY . /var/www/html/
 
-# Dar permisos a los archivos (opcional, pero recomendado)
+# Dar permisos
 RUN chmod -R 755 /var/www/html/
 
-# Exponer el puerto por el que corre Apache
+# Exponer Apache
 EXPOSE 80
+
