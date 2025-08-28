@@ -1,5 +1,5 @@
 <?php
-$serverName = "https://webmssql.monsterasp.net";
+$serverName = "webmssql.monsterasp.net";
 $database   = "db26219";
 $uid        = "db26219";
 $pwd        = "SANTAFE2025!";
@@ -18,4 +18,5 @@ if ($conn === false) {
 } else {
     // echo "Conexión exitosa a SQL Server";
 }
+
 ?>
