@@ -86,7 +86,7 @@ $stmt = sqlsrv_query($conn, $sql, $params);
 
 <div class="barraArriba">
   <div class="logo">
-    <a href="Index.php">facotiza</a>
+    <a href="index.php">facotiza</a>
   </div>
 
   <div class="menu">
@@ -184,6 +184,7 @@ if ($stmt !== false) {
 
 </body>
 </html>
+
 
 
 
